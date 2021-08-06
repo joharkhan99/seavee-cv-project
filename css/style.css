@@ -139,7 +139,7 @@ header.scrolling .nav-item .join:hover {
 /* hero section */
 
 #top_hero {
-    height: 680px;
+    height: 400px;
     position: relative;
 }
 
@@ -261,7 +261,7 @@ header.scrolling .nav-item .join:hover {
 /* adbar sides */
 
 #adbar1 {
-    height: 100px;
+    height: 400px;
     border: 1px solid;
 }
 
