@@ -55,3 +55,72 @@ setInterval(function() {
         .end()
         .appendTo('#slideshow');
 }, 3000);
+
+
+// popular slides
+(function() {
+    function next_prev_btns(btn_id, items_id) {
+        $("." + btn_id).click(function() {
+            var box = $("." + items_id),
+                x;
+            if ($(this).hasClass("right")) {
+                x = ((box.width() / 2)) + box.scrollLeft();
+                box.animate({
+                    scrollLeft: x,
+                })
+            } else {
+                x = ((box.width() / 2)) - box.scrollLeft();
+                box.animate({
+                    scrollLeft: -x,
+                })
+            }
+        });
+    };
+
+    function slide_grab_scroll(items_id) {
+        const slider = document.querySelector('.' + items_id);
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    }
+
+    next_prev_btns("popular-arrow", "popular-items");
+    slide_grab_scroll("popular-items");
+})();
+
+function auto_slides(items_id) {
+    var box = $("." + items_id),
+        x;
+    var x = ((box.width() / 2)) + box.scrollLeft();
+    box.animate({
+        scrollLeft: x,
+    });
+};
+
+setInterval(() => {
+    setTimeout(() => {
+        // auto_slides("popular-items");
+    }, 500);
+}, 5000);
