@@ -18,7 +18,7 @@
 <body>
     <main>
 
-        <header>
+        <header class="_page">
             <!-- big screen nav -->
             <nav class="navbar navbar-expand-lg" aria-label="Eighth navbar example">
                 <div class="container-lg">
@@ -92,8 +92,253 @@
         </header>
         <!-- ./mobnav -->
 
+
+        <!-- filters -->
+        <section id="filter_section" style="margin-top: 100px;">
+            <div class="container">
+
+                <!-- search form -->
+                <div class="row filter_search_form">
+                    <div class="col-md-6 mx-auto">
+                        <form action="">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="search_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                          </svg>
+                                    </span>
+                                    <input type="search_query" class="form-control" id="search_query" aria-describedby="search" placeholder="Find People">
+                                    <button class="search_submit_btn" id="search_submit_btn">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- search form -->
+
+                <div class="row">
+
+                    <!-- ------------------------------------------------Left filters -->
+                    <div class="col-md-3 left_side">
+                        <div class="filters_container">
+
+                            <div class="filter">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="button" data-bs-toggle="collapse" data-bs-target="#filter1" aria-expanded="false" aria-controls="filter1">
+                                            Category <i class="fas fa-angle-down"></i>
+                                        </button>
+                                        <div class="collapse" id="filter1">
+                                            <div class="filter-body">
+
+                                                <form action="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="software_eng">
+                                                        <label class="form-check-label" for="software_eng">
+                                                            Software Engineer
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="doctor">
+                                                        <label class="form-check-label" for="doctor">
+                                                            Doctor
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="lawyer">
+                                                        <label class="form-check-label" for="lawyer">
+                                                            Lawyer
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="game_dev">
+                                                        <label class="form-check-label" for="game_dev">
+                                                            Game Developer
+                                                        </label>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="button" data-bs-toggle="collapse" data-bs-target="#filter2" aria-expanded="false" aria-controls="filter2">
+                                            Salary Range <i class="fas fa-angle-down"></i>
+                                        </button>
+                                        <div class="collapse" id="filter2">
+                                            <div class="filter-body">
+
+                                                <form action="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr1">
+                                                        <label class="form-check-label" for="sr1">
+                                                            $100,000+
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr2">
+                                                        <label class="form-check-label" for="sr2">
+                                                            $100,000 - $90,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr3">
+                                                        <label class="form-check-label" for="sr3">
+                                                            $90,000 - $80,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr4">
+                                                        <label class="form-check-label" for="sr4">
+                                                            $80,000 - $70,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr5">
+                                                        <label class="form-check-label" for="sr5">
+                                                            $70,000 - $60,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr6">
+                                                        <label class="form-check-label" for="sr6">
+                                                            $60,000 - $50,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr7">
+                                                        <label class="form-check-label" for="sr7">
+                                                            $50,000 - $40,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr8">
+                                                        <label class="form-check-label" for="sr8">
+                                                            $40,000 - $30,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr9">
+                                                        <label class="form-check-label" for="sr9">
+                                                            $30,000 - $20,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr10">
+                                                        <label class="form-check-label" for="sr10">
+                                                            $20,000 - $10,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr11">
+                                                        <label class="form-check-label" for="sr11">
+                                                            $10,000 - $5,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr12">
+                                                        <label class="form-check-label" for="sr12">
+                                                            $5,000 - $1,000
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sr13">
+                                                        <label class="form-check-label" for="sr13">
+                                                            $1,000 - $10
+                                                        </label>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="button" data-bs-toggle="collapse" data-bs-target="#filter3" aria-expanded="false" aria-controls="filter3">
+                                            Category <i class="fas fa-angle-down"></i>
+                                        </button>
+                                        <div class="collapse" id="filter3">
+                                            <div class="filter-body">
+
+                                                <form action="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="software_eng">
+                                                        <label class="form-check-label" for="software_eng">
+                                                            Software Engineer
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="doctor">
+                                                        <label class="form-check-label" for="doctor">
+                                                            Doctor
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="lawyer">
+                                                        <label class="form-check-label" for="lawyer">
+                                                            Lawyer
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="game_dev">
+                                                        <label class="form-check-label" for="game_dev">
+                                                            Game Developer
+                                                        </label>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ./------------------------------------------------Left filters -->
+
+                    <!-- --------------------------------------------------right filters result -->
+                    <div class="col-md-9 right_side">
+                        <div class="cards_container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card" style="max-width: 100%;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src="img/person/p1.png" class="card-img-top h-100 w-100" alt="...">
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Alice Liddel</h5>
+                                                    <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
+                                                    <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./--------------------------------------------------right filters result -->
+                </div>
+
+            </div>
+        </section>
+        <!-- ./filters -->
+
         <!-- footer -->
-        <footer>
+        <footer style="margin-top: 400px;">
             <div class="container">
                 <div class="footer_content">
 

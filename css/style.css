@@ -237,6 +237,26 @@ header.scrolling .nav-item .join:hover {
 }
 
 
+/* other pages */
+
+._page .nav-item a {
+    color: rgb(82, 84, 89);
+}
+
+._page .nav-item .join {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+._page .nav-item .join:hover {
+    color: white;
+}
+
+._page .mobile-nav #open-mob-menu span {
+    background: #000000;
+}
+
+
 /* hero section */
 
 #top_hero {
@@ -378,7 +398,7 @@ header.scrolling .nav-item .join:hover {
 }
 
 #adbar1 img {
-    object-fit: contain !important;
+    /* object-fit: contain !important; */
 }
 
 
@@ -747,6 +767,106 @@ footer .container .bottom .right ul li a:hover {
 
 
 /* footer */
+
+
+/* -------------------------------------------------filteers page */
+
+#filter_section .filter_search_form form .col input {
+    padding: 15px 15px;
+    box-shadow: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    /* border: 1px solid rgb(233, 233, 233); */
+    border-radius: 5px;
+    padding-left: 45px;
+    margin-bottom: 30px;
+    padding-right: 110px;
+    color: rgb(59, 62, 72);
+}
+
+#filter_section .filter_search_form form .col {
+    position: relative;
+}
+
+#filter_section .filter_search_form form .col .search_icon {
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    color: rgb(59, 62, 72);
+}
+
+#filter_section .filter_search_form form .col button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    right: 17px;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+}
+
+#filter_section .filter_search_form form .col button:active {
+    background-color: var(--link-active-color);
+}
+
+#filter_section .left_side .filters_container button {
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 500;
+    color: rgb(106, 106, 107);
+}
+
+#filter_section .left_side .filters_container button i {
+    float: right;
+    vertical-align: middle;
+    padding-top: 4px;
+    transition: .2s;
+}
+
+#filter_section .left_side .filters_container button[aria-expanded="true"] i {
+    transform: rotate(180deg);
+    padding-bottom: 4px;
+}
+
+#filter_section .left_side .filters_container button[aria-expanded="true"] {
+    color: rgb(34, 34, 39);
+}
+
+#filter_section .left_side .filters_container .filter {
+    margin-bottom: 20px;
+}
+
+#filter_section .left_side .filters_container .filter .collapse .form-check-input,
+#filter_section .left_side .filters_container .filter .collapse .form-check-label {
+    cursor: pointer;
+}
+
+#filter_section .left_side .filters_container .filter .collapse {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    user-select: none;
+}
+
+#filter_section .left_side .filters_container .filter .collapse form label {
+    font-size: 13px;
+    color: rgb(34, 34, 39);
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+#filter_section .left_side {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/* ./-----------------------------------------------filteers page */
 
 
 /* medias */
