@@ -37,13 +37,111 @@
     z-index: 4;
     width: 272px;
     height: 100%;
-    padding: .5rem 1rem;
-    box-shadow: 0 6px 12px rgba(107, 82, 82, 0.3);
     background-color: white;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    transition: ease 0.2s all;
+    transition: ease 0.4s all;
+    padding-top: 30px;
+    overflow-y: scroll;
+}
+
+.real-menu .nav_header {
+    padding: 0 20px 20px;
+}
+
+.real-menu .nav_header a {
+    display: inline-block;
+    position: relative;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.real-menu .nav_header a:hover,
+.real-menu .nav_header a:active {
+    background-color: var(--link-active-color);
+}
+
+.real-menu ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0 20px 20px;
+    list-style-image: none;
+    margin-bottom: 0;
+}
+
+.real-menu ul li a {
+    transition: color .2s;
+    display: block;
+    text-decoration: none;
+    color: #929292;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.real-menu ul li a:active,
+.real-menu ul li a:hover {
+    color: var(--main-color);
+}
+
+.real-menu ul li .dropdown-container {
+    display: none;
+    padding-left: 15px;
+    border-radius: 3px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.real-menu ul li .dropdown-container a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 400;
+}
+
+.real-menu ul li .dropdown-btn {
+    text-decoration: none;
+    font-size: 18px;
+    color: #929292;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    padding-left: 0px;
+    font-weight: 500;
+}
+
+.real-menu ul li .dropdown-btn i {
+    float: right;
+    vertical-align: middle;
+    padding-top: 7px;
+    transition: transform .3s;
+}
+
+.real-menu .nav_header h6 {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #404145;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dadbdd;
 }
 
 body.open-mob-menu #body-overlay {
@@ -57,11 +155,12 @@ body.open-mob-menu .real-menu {
 #open-mob-menu {
     position: absolute;
     right: 20px;
-    top: 10px;
     border: none;
     background: none;
-    font-size: 22px;
 }
+
+
+/* header */
 
 header {
     position: fixed;
@@ -175,6 +274,7 @@ header.scrolling .nav-item .join:hover {
     inset: 0px;
     z-index: 2;
     width: 100%;
+    padding: 32px 32px 64px;
 }
 
 .hero-section .header {
@@ -277,6 +377,10 @@ header.scrolling .nav-item .join:hover {
     height: 400px;
 }
 
+#adbar1 img {
+    object-fit: contain !important;
+}
+
 
 /* populare sect */
 
@@ -364,25 +468,6 @@ header.scrolling .nav-item .join:hover {
     scrollbar-width: none;
 }
 
-
-/* .popular-section .popular-items::-webkit-scrollbar {
-    height: 7px;
-}
-
-.popular-section .popular-items::-webkit-scrollbar-track {
-    border-radius: 50px;
-    background: #f7f7f7;
-}
-
-.popular-section .popular-items::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    background: rgb(209, 209, 209);
-}
-
-.popular-section .popular-items::-webkit-scrollbar-thumb:hover {
-    background: rgb(179, 179, 179);
-} */
-
 .popular-section .popular-items {
     position: relative;
     width: 100%;
@@ -430,6 +515,21 @@ header.scrolling .nav-item .join:hover {
     text-decoration: none;
     position: relative;
     display: block;
+    height: 100%;
+    user-select: none;
+}
+
+.category .sub_category a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: black;
+    opacity: 0.19;
+    z-index: 1;
+    transition: opacity .3s ease-in-out;
 }
 
 .category .sub_category a h4 {
@@ -457,8 +557,12 @@ header.scrolling .nav-item .join:hover {
     background-color: #efeff0;
 }
 
+.category .sub_category a:hover::before {
+    opacity: 0.1;
+}
+
 .category .sub_category a:hover img {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 
@@ -647,11 +751,67 @@ footer .container .bottom .right ul li a:hover {
 
 /* medias */
 
+@media (max-width: 900px) {
+    #top_hero #top_carousel {
+        display: none;
+    }
+    .hero-section {
+        background-color: rgb(72, 1, 72);
+        display: block;
+    }
+    .hero-section .header {
+        width: 100%;
+        margin: 0;
+        max-width: unset;
+        padding: 50px 64px;
+        height: 100%;
+    }
+    .hero-section .header .top-text {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        padding-bottom: 16px;
+    }
+    .hero-section .header .search_bar form {
+        display: flex;
+        position: relative;
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+    .hero-section .header .search_bar form input {
+        border-radius: 4px;
+    }
+    .hero-section .header .search_bar form button {
+        margin: 12px 0 0;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section .header {
+        padding: 48px 0;
+    }
+    .hero-section {
+        width: 100%;
+        padding: 24px 24px 48px;
+        /* padding-top: 0; */
+        padding-bottom: 0;
+    }
+    .hero-section .header .top-text {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 32px;
+    }
+}
+
 @media (max-width: 700px) {
     footer .container .bottom {
-        -webkit-font-smoothing: antialiased;
-        font: 400 16px/24px Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
-        color: #62646a;
         min-width: 0;
         display: flex;
         flex-wrap: wrap;
@@ -707,6 +867,22 @@ footer .container .bottom .right ul li a:hover {
 @media (max-width: 990px) {
     .mobile-nav {
         display: block;
+    }
+    .mobile-nav #open-mob-menu {
+        top: 24px;
+    }
+    .mobile-nav #open-mob-menu span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        margin-bottom: 4px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 3px;
+        z-index: 1;
+    }
+    header.scrolling .mobile-nav #open-mob-menu span {
+        background: #000000;
     }
 }
 
