@@ -1,3 +1,14 @@
+// heart
+$(".add_to_fav button i").click(function() {
+    if ($(this).hasClass('far')) {
+        $(this).removeClass('far');
+        $(this).addClass('fas');
+    } else {
+        $(this).removeClass('fas');
+        $(this).addClass('far');
+    }
+});
+
 // scroll nav
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -141,4 +152,4 @@ for (i = 0; i < dropdown.length; i++) {
             $(".dropdown-btn i").css({ "transform": "rotate(-180deg)", "padding-bottom": "5px" });
         }
     });
-}
+};
