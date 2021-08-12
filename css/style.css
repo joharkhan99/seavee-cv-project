@@ -1091,7 +1091,8 @@ main {
     background-color: rgb(248, 249, 253);
 }
 
-#profile {
+#profile,
+#registration {
     margin-top: 69px;
     padding-top: 50px;
 }
@@ -1143,7 +1144,20 @@ main {
 }
 
 #profile .cv_bio .profile_btns {
-    padding-top: 50px;
+    padding-top: 40px;
+}
+
+#profile .cv_bio .rating {
+    font-size: 13px;
+}
+
+#profile .cv_bio .rating i {
+    color: rgb(150, 170, 182);
+    /* text-align: center; */
+}
+
+#profile .cv_bio .rating i._g {
+    color: #ffbe5b;
 }
 
 #profile .cv_bio .profile_btns button,
@@ -1367,13 +1381,140 @@ main {
     font-weight: 400;
 }
 
+.user_review .rating {
+    font-size: 11px;
+}
+
+.user_review .rating i {
+    color: rgb(150, 170, 182);
+}
+
+.user_review .rating i._g {
+    color: #ffbe5b;
+}
+
+.leave__rev form {
+    padding-top: 20px;
+}
+
+.leave__rev form .review_textarea {
+    box-shadow: none;
+    height: 200px;
+    border: none;
+    border-bottom: 2px solid rgb(182, 182, 182);
+    resize: none;
+    border-radius: 0;
+    font-size: 15px;
+    color: rgb(58, 58, 58);
+}
+
+.leave__rev form .review_textarea:focus {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.leave__rev form button {
+    box-shadow: none;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    margin-top: 30px;
+    padding: 10px 40px;
+    border-radius: 3px;
+}
+
+.leave__rev form button:hover {
+    background-color: rgb(111, 3, 111);
+}
+
+.leave__rev form button:active {
+    background-color: rgb(150, 4, 150);
+}
+
+.leave__rev form .form-check-input:checked {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    box-shadow: none;
+}
+
+.leave__rev form .stars_rating {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.leave__rev form .stars_rating i {
+    color: #ffbe5b;
+    font-size: 14px;
+}
+
+.leave__rev form .stars_rating h6 {
+    color: rgb(72, 78, 82);
+    padding-bottom: 3px;
+}
+
 
 /* ./-----------------------------------------------profile page */
+
+
+/* ./-----------------------------------------------registration page */
+
+#registration ul {
+    padding-top: 20px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#registration form {
+    padding: 30px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#registration form input:focus {
+    box-shadow: none;
+    border: 1px solid var(--main-color);
+}
+
+#registration form label {
+    color: rgb(92, 101, 107);
+}
+
+#registration ul .nav-link {
+    color: var(--main-color);
+    border: 1px solid;
+}
+
+#registration ul .nav-link.active {
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid;
+}
+
+#registration button[type="submit"] {
+    background-color: var(--main-color);
+    border: none;
+    margin-top: 20px;
+    box-shadow: none;
+}
+
+#registration button[type="submit"]:hover {
+    background-color: rgb(107, 4, 107);
+}
+
+#registration button[type="submit"]:active {
+    background-color: rgb(135, 8, 135);
+}
+
+
+/* ./-----------------------------------------------registration page */
 
 
 /* medias */
 
 @media (max-width: 766px) {
+    .cv_bio .rating {
+        text-align: center;
+    }
     .user_review .detail .time {
         top: 9px;
         right: -3px;
@@ -1466,6 +1607,9 @@ main {
     .hero-section .header {
         padding: 48px 0;
     }
+    #registration form {
+        padding: 10px 10px;
+    }
     .hero-section {
         width: 100%;
         padding: 24px 24px 48px;
@@ -1479,6 +1623,9 @@ main {
         font-size: 32px;
         line-height: 40px;
         padding-bottom: 32px;
+    }
+    #registration ul .nav-link {
+        margin-bottom: 5px;
     }
 }
 
