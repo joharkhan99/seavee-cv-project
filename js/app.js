@@ -1,5 +1,5 @@
 // heart
-$(".add_to_fav button i").click(function() {
+$(".add_to_fav button i").click(function () {
     if ($(this).hasClass('far')) {
         $(this).removeClass('far');
         $(this).addClass('fas');
@@ -10,10 +10,10 @@ $(".add_to_fav button i").click(function() {
 });
 
 // scroll nav
-$(window).scroll(function() {
+$(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 100) {
+    if (scroll >= 40) {
         $("header").addClass("scrolling");
     } else {
         $("header").removeClass("scrolling");
@@ -49,7 +49,7 @@ function toggleMenu() {
         removeClass(ele, "open-mob-menu");
     }
 }
-document.addEventListener('readystatechange', function() {
+document.addEventListener('readystatechange', function () {
     if (document.readyState === "complete") {
         init();
     }
@@ -58,7 +58,7 @@ document.addEventListener('readystatechange', function() {
 // ad slideshow
 $("#slideshow > div:gt(0)").hide();
 
-setInterval(function() {
+setInterval(function () {
     $('#slideshow > div:first')
         .fadeOut(1000)
         .next()
@@ -69,9 +69,9 @@ setInterval(function() {
 
 
 // popular slides
-(function() {
+(function () {
     function next_prev_btns(btn_id, items_id) {
-        $("." + btn_id).click(function() {
+        $("." + btn_id).click(function () {
             var box = $("." + items_id),
                 x;
             if ($(this).hasClass("right")) {
@@ -141,7 +141,7 @@ var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
+    dropdown[i].addEventListener("click", function () {
         this.classList.toggle("active");
         var dropdownContent = this.nextElementSibling;
         if (dropdownContent.style.display === "block") {
