@@ -12269,13 +12269,12 @@ fieldset:disabled .swal2-modal .swal2-buttonswrapper .swal2-styled,
 }
 
 .btn-light {
-    color: #000;
+    color: #000 !important;
     background-color: #fbfbfb;
     border-color: #fbfbfb;
 }
 
 .btn-light:hover {
-    color: #000;
     background-color: #fcfcfc;
     border-color: #fbfbfb;
 }
@@ -33383,14 +33382,13 @@ div.tagsinput span.tag a {
 }
 
 .popup {
-    /* display: none; */
+    display: none;
     position: absolute;
     width: auto;
     left: 50%;
     height: auto;
     top: 50%;
-    z-index: 1032;
-    display: block;
+    z-index: 5;
     background: none;
     transform: translate(-50%, -50%);
     width: 60%;
@@ -33416,8 +33414,57 @@ div.tagsinput span.tag a {
     z-index: -1;
 }
 
+.list_container {
+    overflow-y: auto;
+    margin-bottom: 50px;
+}
+
+.skills_container {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.skills_container span {
+    border: 1px solid #d3d3d3;
+    padding: 5px 20px;
+    font-size: 14px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.02);
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding-right: 25px;
+    position: relative;
+}
+
+.skills_container span:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.skills_container span b {
+    position: absolute;
+    right: 4px;
+    color: #b1b1b1;
+    padding-right: 0px;
+    top: 0;
+    text-align: center;
+    top: 4px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.skills_container span b:hover {
+    color: #767676 !important;
+}
+
+@media (max-width: 600px) {
+    .popup {
+        width: 90%;
+    }
+}
+
 @media (max-width: 470px) {
-    .e_info_form .form-group button {
+    .e_info_form .form-group button,
+    .skills_form .form-group button {
         width: 40% !important;
     }
 }
