@@ -1224,7 +1224,7 @@ main {
     background-color: rgb(250, 239, 255);
 }
 
-#profile .profile_details, #profile .reviews {
+#profile .profile_details, #profile .reviews, .profile_education {
     margin-top: 30px;
     padding: 30px;
     background-color: white;
@@ -1232,7 +1232,7 @@ main {
     padding-top: 0px;
 }
 
-#profile .profile_details .description h5, #profile .profile_details .langs h5, #profile .profile_details .skills h5, #profile .reviews h5 {
+#profile .profile_details .description h5, #profile .profile_details .langs h5, #profile .profile_details .skills h5, #profile .reviews h5, .profile_education h5 {
     color: rgb(72, 78, 82);
     font-size: 17px;
 }
@@ -1279,6 +1279,43 @@ main {
 
 #profile .review_container {
     padding-top: 30px;
+}
+
+.profile_education {
+    margin-top: 30px;
+    padding: 30px !important;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    padding-top: 0px;
+}
+
+.profile_education .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.profile_education .col-md-4 h6 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(94, 94, 94);
+}
+
+.profile_education .col-md-4 .uni {
+    color: dodgerblue;
+    font-weight: 500;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+.profile_education .col-md-4 .date {
+    color: rgb(128, 139, 146);
+    font-size: 13px;
+}
+
+.profile_education .col-md-4 .date i {
+    padding-right: 7px;
+    color: rgb(95, 105, 111);
+    font-size: 14px;
 }
 
 .user_review {

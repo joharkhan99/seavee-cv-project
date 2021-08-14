@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dashboard</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../img/logo.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- top nav partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="index.html">
+            <img src="../img/logo.png" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html">
+            <img src="../img/logo.png" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top">
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text">Welcome, <span class="text-black fw-bold">John Doe</span></h1>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-mail icon-lg"></i>
+              <span class="count">1</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../img/person/p16.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../img/person/p4.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../img/person/p6.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="../img/person/p4.jpg" style="object-fit: cover;" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="../img/person/p4.jpg" style="object-fit: cover;" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My
+                Profile</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i>
+                Messages</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- sidebar partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="mdi mdi-grid-large menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item nav-category">UI Elements</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="menu-icon mdi mdi-floor-plan"></i>
+              <span class="menu-title">UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Forms and Datas</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="menu-icon mdi mdi-card-text-outline"></i>
+              <span class="menu-title">Form elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic
+                    Elements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Charts</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="menu-icon mdi mdi-table"></i>
+              <span class="menu-title">Tables</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic
+                    table</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="menu-icon mdi mdi-layers-outline"></i>
+              <span class="menu-title">Icons</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">pages</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-account-circle-outline"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">help</li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
+              <i class="menu-icon mdi mdi-file-document"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+
+            <div class="col-md-12 mb-5 comp_heading">
+              <h4 class="mb-0 text-white bg-success text-center py-2">Edit Your Profile</h4>
+            </div>
+
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Personal Information</h4>
+                  <form class="p_info_form" name="p_info_form" id="p_info_form">
+
+                    <div class="form-group">
+                      <label for="upload">Change Profile Image</label>
+                      <div class="input-group pill bg-white shadow-sm">
+                        <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                        <label id="upload-label" for="upload" class="text-muted">Choose
+                          file</label>
+                        <div class="input-group-append">
+                          <label for="upload" class="btn m-0 pill px-4">
+                            <small class="text-uppercase font-weight-bold">Choose
+                              file</small>
+                          </label>
+                        </div>
+                      </div>
+
+                      <!-- Uploaded image area-->
+                      <div class="image-area" style="display: block;">
+                        <img id="imageResult" src="../img/person/p10.jpg" alt="" class="img-fluid rounded shadow-sm mx-auto d-block">
+                      </div>
+
+                      <script>
+                        function readURL(input) {
+                          if (input.files && input.files[0]) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                              document.querySelector(".image-area").style.display = "block";
+                              document.querySelector("#imageResult").setAttribute('src', e.target.result);
+                            };
+                            reader.readAsDataURL(input.files[0]);
+                          }
+                        }
+
+                        (function () {
+                          document.getElementById("upload").onchange = function () {
+
+                            readURL(input);
+                          }
+                        });
+                        var input = document.getElementById('upload');
+
+                        input.addEventListener('change', showFileName);
+
+                        function showFileName(event) {
+                          var input = event.srcElement;
+                          var fileName = input.files[0].name;
+                        }
+                      </script>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="name">Change Your Name</label>
+                      <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name" value="James hardy">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="gender">Change Gender</label>
+                      <select name="gender" id="gender" class="form-control form-control-lg">
+                        <option>Please Select</option>
+                        <option value="male" selected>Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Others</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="dob">Change Date Of Birth</label>
+                      <input type="date" class="form-control form-control-lg" id="dob" placeholder="Date of birth" value="2001-08-18">
+                    </div>
+                    <div class="form-group">
+                      <label for="city">Change City</label>
+                      <input type="text" class="form-control form-control-lg" id="city" placeholder="Enter your city" value="New York">
+                    </div>
+                    <div class="form-group">
+                      <label for="country">Change Country</label>
+                      <input type="text" class="form-control form-control-lg" id="country" placeholder="Enter your country" value="USA">
+                    </div>
+                    <div class="form-group mb-lg-5">
+                      <label for="contact_no">Change Contact No.</label>
+                      <input type="text" class="form-control form-control-lg" id="contact_no" placeholder="Enter your contact number" value="+1 232323232">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary me-2 w-100">Update</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+
+                  <h4 class="card-title">Educational Information</h4>
+
+                  <form class="e_info_form" name="e_info_form" id="e_info_form">
+
+                    <div class="list_container">
+                      <table class="table table-responsive" id="degree_list">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Degree</th>
+                            <th scope="col">Field of Study</th>
+                            <th scope="col">Institute</th>
+                            <th scope="col">From</th>
+                            <th scope="col">To</th>
+                            <th scope="col">Certificate</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+
+                          <tr>
+                            <td>
+                              <button type="button" onclick="Fill_Edu_Form(this);show('popup2')" class="btn btn-primary px-3 py-1">Edit</button>
+                            </td>
+                            <td>
+                              qualification
+                              <input type='hidden' name='qualification' value='qualification'>
+                            </td>
+                            <td>
+                              field_of_study
+                              <input type='hidden' name='qualification_field_of_study' value='field_of_study'>
+                            </td>
+                            <td>
+                              institute
+                              <input type='hidden' name='qualification_institute' value='institute'>
+                            </td>
+                            <td>
+                              from_date
+                              <input type='hidden' name='qualification_from_date' value='from_date'>
+                            </td>
+                            <td>
+                              _to_date
+                              <input type='hidden' name='qualification_to_date' value='to_date'>
+                            </td>
+                            <td>
+                              cert
+                              <input type='hidden' name='qualification_cert' value='cert'>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="form-group text-center">
+                      <button type="submit" class="btn btn-primary me-2 w-100">Update</button>
+                    </div>
+
+                  </form>
+
+                  <div class="popup" id="popup2">
+                    <div class="row">
+                      <div class="col-12 grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">Edit Your Education</h4>
+                            <form name="add_e_info_form" id="add_e_info_form">
+
+                              <div class="form-group">
+                                <label for="qualification">Qualification</label>
+                                <select name="qualification" id="qualification" class="form-control form-control-lg" required>
+                                  <option selected value="">Please Select</option>
+                                  <option value="phd">PHD</option>
+                                  <option value="masters">Masters</option>
+                                  <option value="bachelors">Bachelors</option>
+                                  <option value="diploma">Diploma</option>
+                                  <option value="high_school">High School</option>
+                                  <option value="short_course">Short Course</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="field_of_study">Field Of Study</label>
+                                <input type="text" class="form-control form-control-lg" id="field_of_study" placeholder="Enter field of study" required>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="institute">Institute</label>
+                                <input type="text" class="form-control form-control-lg" id="institute" placeholder="Enter institute" required>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <label for="degree_from">From</label>
+                                    <input type="date" class="form-control" id="degree_from" placeholder="Enter from date" required>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="degree_to">To <small>(leave empty if
+                                        ongoing)</small></label>
+                                    <input type="date" class="form-control" id="degree_to" placeholder="Enter to date">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="cert">Upload Certificate
+                                  <small>(optional)</small></label>
+                                <input type="file" class="form-control form-control-lg" id="cert" placeholder="certificate" value="asfdf">
+                              </div>
+
+
+                              <button type="submit" class="btn btn-primary me-2">Ok</button>
+                              <button type="button" class="btn btn-light" onclick="hide('popup2')">Cancel</button>
+                            </form>
+
+                            <!-- edu list adding -->
+                            <script>
+
+                              // fill form
+                              function Fill_Edu_Form(param) {
+                                var deg = "", f_of_s = "", inst = "", from = "", to = "";
+                                var as = param.parentElement.parentElement.childNodes;
+                                console.log(as.length)
+                                for (var i = 1; i < as.length; i++) {
+                                  console.log(i + " " + as[i].textContent.trim());
+                                }
+                                deg = as[1].textContent.trim();
+                                f_of_s = as[2].textContent.trim();
+                                inst = as[3].textContent.trim();
+                                from = as[4].textContent.trim();
+                                to = as[5].textContent.trim();
+
+                                document.getElementById('qualification').value = deg;
+                                document.getElementById('field_of_study').value = f_of_s;
+                                document.getElementById('institute').value = inst;
+                                document.getElementById('degree_from').value = from;
+                                document.getElementById('degree_to').value = to;
+                              }
+
+
+                              var add_form = document.getElementById("add_e_info_form");
+                              add_form.onsubmit = function (e) {
+                                e.preventDefault();
+
+                                hide("popup2");
+                                add_form.reset();
+                              };
+                            </script>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <script>
+                    var getId = function (id) {
+                      return document.getElementById(id);
+                    }
+
+                    var show = function (id) {
+                      getId(id).style.display = 'block';
+                    }
+                    var hide = function (id) {
+                      getId(id).style.display = 'none';
+                    };
+                  </script>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Professional Information</h4>
+                  <form class="work_info_form" name="work_info_form" id="work_info_form">
+
+                    <div class="form-group">
+                      <label for="prof_catg">Change Professional Field</label>
+                      <select name="prof_catg" id="prof_catg" class="form-control form-control-lg">
+                        <option selected>Please Select your Field</option>
+                        <option value="male">Web Dev</option>
+                        <option value="female">Designer</option>
+                        <option value="other">App Dev</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="city">How much year(s) of experience do you have?</label>
+                      <input type="text" class="form-control form-control-lg" id="city" placeholder="1, 2, 3, etc..">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="salary_range">Change Salary Range</label>
+                      <select name="salary_range" id="salary_range" class="form-control form-control-lg">
+                        <option selected>Please Select your salary range</option>
+                        <option value="male">Web Dev</option>
+                        <option value="female">Designer</option>
+                        <option value="other">App Dev</option>
+                      </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary me-2 w-100 mt-5">Update</button>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Edit Your Social Links</h4>
+
+                  <form class="edit_social_form" name="edit_social_form" id="edit_social_form">
+
+                    <div class="input-group mb-3 mt-4">
+                      <div class="input-group-prepend">
+                        <span class="px-3 input-group-text h-100" id="linkedin">
+                          <i class="icon icon-social-linkedin"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control form-control-lg" placeholder="Linkedin profile URL" aria-describedby="linkedin">
+                    </div>
+
+                    <div class="input-group mb-3 mt-4">
+                      <div class="input-group-prepend">
+                        <span class="px-3 input-group-text h-100" id="twitter">
+                          <i class="icon icon-social-twitter"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control form-control-lg" placeholder="Twitter profile URL" aria-describedby="Twitter">
+                    </div>
+
+                    <div class="input-group mb-3 mt-4">
+                      <div class="input-group-prepend">
+                        <span class="px-3 input-group-text h-100" id="facebook">
+                          <i class="icon icon-social-facebook"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control form-control-lg" placeholder="Facebook profile URL" aria-describedby="facebook">
+                    </div>
+
+                    <div class="input-group mb-3 mt-4">
+                      <div class="input-group-prepend">
+                        <span class="px-3 input-group-text h-100" id="instagram">
+                          <i class="icon icon-social-instagram"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control form-control-lg" placeholder="Instagram profile URL" aria-describedby="instagram">
+                    </div>
+
+                    <div class="input-group mb-3 mt-4">
+                      <div class="input-group-prepend">
+                        <span class="px-3 input-group-text h-100" id="github">
+                          <i class="icon icon-social-github"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control form-control-lg" placeholder="github profile URL" aria-describedby="github">
+                    </div>
+
+                    <div class="input-group mb-3 mt-4">
+                      <div class="input-group-prepend">
+                        <span class="px-3 input-group-text h-100" id="dribble">
+                          <i class="icon icon-social-dribbble"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control form-control-lg" placeholder="dribble profile URL" aria-describedby="dribble">
+                    </div>
+
+                    <div class="input-group mb-3 mt-4">
+                      <div class="input-group-prepend">
+                        <span class="px-3 input-group-text h-100" id="behance">
+                          <i class="icon icon-social-behance"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control form-control-lg" placeholder="behance profile URL" aria-describedby="behance">
+                    </div>
+
+                    <div class="form-group text-center mt-5">
+                      <button type="submit" class="btn btn-primary me-2 w-100">Update</button>
+                    </div>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Edit Skills</h4>
+                  <form class="skills_form" name="skills_form" id="skills_form">
+
+                    <div class="skills_container">
+                    </div>
+
+                    <div class="form-group text-center">
+                      <button type="button" class="btn btn-primary me-2 w-25" onclick="show('popup3')">Add</button>
+                      <button type="submit" class="btn btn-primary me-2 w-25">Update</button>
+                    </div>
+
+                  </form>
+
+                  <div class="popup" id="popup3">
+                    <div class="row">
+                      <div class="col-12 grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">Add Skill</h4>
+                            <form name="add_skill" id="add_skill">
+
+                              <div class="form-group">
+                                <label for="skill">Skill</label>
+                                <input type="text" class="form-control form-control-lg" id="skill" placeholder="Enter skill">
+                              </div>
+
+
+                              <button type="submit" class="btn btn-primary me-2">Ok</button>
+                              <button type="button" class="btn btn-light" onclick="hide('popup3')">Cancel</button>
+                            </form>
+
+
+                            <!-- edu list adding -->
+                            <script>
+                              var add_skill_form = document.getElementById("add_skill");
+                              add_skill_form.onsubmit = function (e) {
+                                e.preventDefault();
+                                hide("popup3");
+                                var skill = document.getElementById("skill").value;
+                                var span = document.createElement('span'); // is a node
+                                span.className = "rounded-pill";
+                                span.innerHTML = skill + "<b title='remove skill' onclick='RemoveSkill(this)'>x</b><input type='hidden' name='" + skill + "' value='" + skill + "'>";
+                                document.querySelector(".skills_container").appendChild(span);
+
+                                add_skill_form.reset();
+                              };
+
+                              function RemoveSkill(param) {
+                                param.parentElement.remove();
+                              }
+                            </script>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Update Your Resume/CV</h4>
+                  <form class="resume_form" name="resume_form" id="resume_form">
+
+                    <div class="form-group mb-lg-5">
+                      <label for="resume">Please upload your updated resume</label>
+                      <input type="file" class="form-control form-control-lg" id="resume" placeholder="upload your resume" required>
+                    </div>
+
+                    <div class="form-group text-center">
+                      <button type="submit" class="btn btn-primary me-2 w-50">Update</button>
+                    </div>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+      </div>
+      <!-- content-wrapper ends -->
+
+
+
+
+
+
+
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
