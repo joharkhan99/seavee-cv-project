@@ -30063,12 +30063,16 @@ div.tagsinput span.tag a {
     margin-bottom: 50px;
 }
 
-.skills_container {
+.skills_container, .langs_container {
     margin-bottom: 50px;
     margin-top: 30px;
 }
 
-.skills_container span {
+.langs_container {
+    margin-bottom: 0 !important;
+}
+
+.skills_container span, .langs_container span {
     border: 1px solid #d3d3d3;
     padding: 5px 20px;
     font-size: 14px;
@@ -30080,11 +30084,11 @@ div.tagsinput span.tag a {
     position: relative;
 }
 
-.skills_container span:hover {
+.skills_container span:hover, .langs_container span:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.skills_container span b {
+.skills_container span b, .langs_container span b {
     position: absolute;
     right: 4px;
     color: #b1b1b1;
@@ -30096,7 +30100,7 @@ div.tagsinput span.tag a {
     font-weight: 400;
 }
 
-.skills_container span b:hover {
+.skills_container span b:hover, .langs_container span b:hover {
     color: #767676 !important;
 }
 
@@ -30390,12 +30394,12 @@ div.tagsinput span.tag a {
 }
 
 .chat .users .search button.active {
-    background: #333;
+    background: purple;
     color: #fff;
 }
 
 .chat .search button.active i::before {
-    content: '\f00d';
+    content: '\e646';
 }
 
 .chat .users-list {
@@ -30415,10 +30419,10 @@ div.tagsinput span.tag a {
     text-decoration: none;
 }
 
-.chat .users-list a:hover {
+/* .chat .users-list a:hover {
     background: #b022ea12;
     border-radius: 5px;
-}
+} */
 
 /* .chat .users-list a { */
 
@@ -30656,4 +30660,93 @@ div.tagsinput span.tag a {
 
 .social_form i, .edit_social_form i {
     color: black;
+}
+
+.cust_alert {
+    position: fixed;
+    z-index: 9999;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 3px;
+    padding: 15px 10px;
+    left: 24px;
+    bottom: 24px;
+    width: auto;
+    background-color: #353535;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    .cust_alert {
+        left: 3px;
+        padding-left: 3px;
+        padding-right: 3px;
+        font-size: 16px;
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.meter {
+    box-sizing: content-box;
+    height: 20px;
+    /* Can be anything */
+    position: relative;
+    background: #fff;
+    border-radius: 25px;
+    padding: 4px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meter>span {
+    display: block;
+    height: 100%;
+    border-radius: 20px;
+    background-color: purple;
+    background-image: linear-gradient(center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.meter span b {
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    padding-top: 1px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.meter>span:after, .animate>span>span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+.animate>span:after {
+    display: none;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
 }
